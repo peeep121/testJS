@@ -1,0 +1,23 @@
+$( document ).ready(function() 
+{
+    $("#ch-row").click(function()
+    {
+        $(".wrapper").each(function()
+        {
+            $(this).removeClass("col-md-4");
+            $(this).addClass("col-md-12");
+            $(this).find(".img").removeClass("col-md-12");
+            $(this).find(".img").addClass("col-md-3");
+        });
+    });
+    $("#ch-block").click(function()
+    {
+        $(".wrapper").each(function()
+        {
+            $(this).removeClass("col-md-12");
+            $(this).addClass("col-md-4");
+            $(this).find(".img").removeClass("col-md-3");
+            $(this).find(".img").addClass("col-md-12");
+        });
+    });
+});
